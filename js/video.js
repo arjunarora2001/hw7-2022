@@ -13,6 +13,7 @@ document.querySelector("#play").addEventListener("click", function() {
 	console.log("Play Video");
 	video = document.querySelector('#player1');
 	video.play();
+	document.querySelector("#volume").innerHTML = document.querySelector("#slider").value + '%';
 });
 
 document.querySelector("#pause").addEventListener("click", function() {
